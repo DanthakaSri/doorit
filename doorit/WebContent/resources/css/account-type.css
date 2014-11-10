@@ -1,0 +1,83 @@
+
+/*========================================================
+  Author :Pasindu Danthaka Sri
+    License: SolutionTechs 
+==========================================================*/
+
+/*=======================
+Style Sheet Account-type
+=======================*/
+
+#right
+{
+    max-width: 400px; 
+    max-height: 250px;
+    display:block;
+    background-color: whitesmoke;
+    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    float: right;
+    margin-top:100px;
+    margin-bottom: 10px;
+    margin-right: 60px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-opacity:0.5;
+
+}
+#left
+{
+    max-width: 400px; 
+    max-height: 250px;
+    display:block;
+    background-color: whitesmoke;
+    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    float:left;
+    margin-top:100px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-opacity:0.5;
+}
+
+.heading {
+    color:#334189;
+}
+
+.heading-text{
+    color:#334189;
+}
+.btn-primary
+{
+    background-color: #2f88f0;
+    border-color: #2f88f0;
+}
+.text-bold
+{
+    color: black;
+}
+.background
+{
+    background-image: url("../img/register.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height:650px;
+
+}
+.section {
+    margin:0;
+    padding: 20px  0 30px ;
+    opacity: 0.5;
+}
+
+/*===========================
+End Style Sheet Account-type
+===========================*/
