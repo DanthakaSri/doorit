@@ -134,4 +134,18 @@ public Question getQuestionById(long id) {
 	System.out.println("Product loaded successfully, Person details="+q);
 	return q;
 }
+
+
+@Override
+public List<Option> listOption() {
+	System.out.println("######################## DAO question list ##################");
+	Session session = this.sessionFactory.getCurrentSession();
+	List<Option> optionList = session.createQuery("from Option").list();
+	for(Option o : optionList){
+		logger.info("Product List::"+o);
+	}
+	return optionList;
+}
+
+
 }

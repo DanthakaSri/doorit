@@ -68,6 +68,13 @@ public class AdminServiceImpl implements AdminService {
 		return this.adminDAO.getQuestionById(id);
 	}
 
+	@Override
+	@Transactional
+	public List<Option> listOption() {
+		return this.adminDAO.listOption();
+		
+	}
+
 
 
 

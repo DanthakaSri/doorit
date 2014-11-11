@@ -10,6 +10,7 @@ public interface AdminService {
 
 	public List<Product> listProduct();
 	public List<Question> listQuestion();
+	public List<Option> listOption();
 	public void addProduct(Product p);
 	public void addQuestion(Product p ,Question q);
 	public void addOption(Option o ,Question q);

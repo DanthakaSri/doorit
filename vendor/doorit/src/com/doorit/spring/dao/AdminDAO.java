@@ -11,6 +11,7 @@ public interface AdminDAO {
 
 	public List<Product> listProduct();
 	public List<Question> listQuestion();
+	public List<Option> listOption();
 	public void addProduct(Product p);
 	public Product getProductById(long id);
 	public void addQuestion( Product p ,Question q);

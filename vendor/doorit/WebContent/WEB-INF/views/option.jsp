@@ -18,50 +18,39 @@
 </h1>
 
 
-<c:url var="addAction" value="/addQuestion/${product1}" ></c:url>
+<c:url var="addAction" value="/addOption/${question1}" ></c:url>
 
-<form:form action="${addAction}" commandName="question">
+<form:form action="${addAction}" commandName="option">
 <table>
 	
 	<tr>
 		<td>
-			<form:label path="queId">
-				<spring:message text="queId"/>
+			<form:label path="optId">
+				<spring:message text="optId"/>
 			</form:label>
 		</td>
 		<td>
-			<form:input path="queId" readonly="true" size="8"  disabled="true" />
-			<form:hidden path="queId" />
+			<form:input path="optId" readonly="true" size="8"  disabled="true" />
+			<form:hidden path="optId" />
 		</td> 
 	</tr>
 	
 	<tr>
 		<td>
-			<form:label path="queDesc">
-				<spring:message text="queDesc"/>
+			<form:label path="optDesc">
+				<spring:message text="optDesc"/>
 			</form:label>
 		</td>
 		<td>
-			<form:input path="queDesc" />
+			<form:input path="optDesc" />
 		</td> 
 	</tr>
-	<tr>
-		<td>
-			<form:label path="queType">
-				<spring:message text="queType"/>
-			</form:label>
-		</td>
-		<td>
-			<form:input path="queType" />
-		</td>
-	</tr>
-	
 	<tr>
 		<td colspan="2">
-			<c:if test="${empty question.queDesc}">
+			
 				<input type="submit"
-					value="<spring:message text="Add Question"/>" />
-			</c:if>
+					value="<spring:message text="Add Option"/>" />
+			
 		</td>
 	</tr>
 	 
@@ -69,22 +58,21 @@
 </form:form>
 
 <h3>Option List</h3>
-<c:if test="${!empty listQuestion}">
+<c:if test="${!empty listOption}">
 	<table class="tg">
 	<tr>
-		<th width="80">Product ID</th>
-		<th width="80">Que ID</th>
-		<th width="120">Que Desc</th>
-		<th width="120">Que Type</th>
-		<th width="60">Edit</th>
+		<th width="80">Question ID</th>
+		<th width="80">Opt ID</th>
+		<th width="120">Opt Desc</th>
+		
+		<th width="60">Delete</th>
 	</tr>
-	<c:forEach items="${listQuestion}" var="question">
+	<c:forEach items="${listOption}" var="option">
 		<tr>
-			<td>${question.product.productId}</td>
-			<td>${question.queId}</td>
-			<td>${question.queDesc}</td>
-			<td>${question.queType}</td>
-			<td><a href="<c:url value='/addQuestion/${question.queId}' />" >Add Question</a></td>
+			<td>${option.question.queId}</td>
+			<td>${option.optId}</td>
+			<td>${option.optDesc}</td>
+			<td><a href="<c:url value='/deleteOption/${option.optId}' />" >Delete Option</a></td>
 			
 		</tr>
 	</c:forEach>

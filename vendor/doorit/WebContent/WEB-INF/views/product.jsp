@@ -77,8 +77,8 @@
 		<th width="80">Product ID</th>
 		<th width="120">Product Name</th>
 		<th width="120">Product Desc</th>
-		<th width="60">Edit</th>
-		<th width="60">Delete</th>
+		<th width="60">Add Question</th>
+		<th width="60">Delete Product</th>
 	</tr>
 	<c:forEach items="${listProduct}" var="product">
 		<tr>

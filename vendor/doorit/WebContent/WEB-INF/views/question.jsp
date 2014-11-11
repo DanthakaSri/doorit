@@ -76,7 +76,7 @@
 		<th width="80">Que ID</th>
 		<th width="120">Que Desc</th>
 		<th width="120">Que Type</th>
-		<th width="60">Edit</th>
+		<th width="60">Add Option</th>
 	</tr>
 	<c:forEach items="${listQuestion}" var="question">
 		<tr>
