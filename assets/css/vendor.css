@@ -199,7 +199,7 @@ h1 a.navbar-brand {
 }
 .footer ul li a {
     padding: 0 0 5px 0;
-    /* display: block;*/
+   /* display: block;*/
 }
 .footer a {
     color: #78828D
@@ -427,106 +427,142 @@ a.scrollup{
 
 
 @media only screen and (max-width: 800px) {
-
+    
     /* Force table to not be like tables anymore */
-    #no-more-tables table, 
-    #no-more-tables thead, 
-    #no-more-tables tbody, 
-    #no-more-tables th, 
-    #no-more-tables td, 
-    #no-more-tables tr { 
-        display: block; 
-    }
+	#no-more-tables table, 
+	#no-more-tables thead, 
+	#no-more-tables tbody, 
+	#no-more-tables th, 
+	#no-more-tables td, 
+	#no-more-tables tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#no-more-tables thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#no-more-tables tr { 
+		/*border: 1px solid #ccc;*/
+		margin-bottom: 5px;
+		 }
+ 
+	#no-more-tables td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	#no-more-tables td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	#no-more-tables td:before { content: attr(data-title); }
 
-    /* Hide table headers (but not display: none;, for accessibility) */
-    #no-more-tables thead tr { 
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
+	#no-more-tables .btn-lg
+	{
+		width:200px;
+		/*background-color: #08088A;*/
+		border-radius: 0px;
+	}
 
-    #no-more-tables tr { 
-        /*border: 1px solid #ccc;*/
-        margin-bottom: 5px;
-    }
-
-    #no-more-tables td { 
-        /* Behave  like a "row" */
-        border: none;
-        border-bottom: 1px solid #eee; 
-        position: relative;
-        padding-left: 50%; 
-        white-space: normal;
-        text-align:left;
-    }
-
-    #no-more-tables td:before { 
-        /* Now like a table header */
-        position: absolute;
-        /* Top/left values mimic padding */
-        top: 6px;
-        left: 6px;
-        width: 45%; 
-        padding-right: 10px; 
-        white-space: nowrap;
-        text-align:left;
-        font-weight: bold;
-    }
-
-    /*
-    Label the data
-    */
-    #no-more-tables td:before { content: attr(data-title); }
-
-    #no-more-tables .btn-lg
-    {
-        width:200px;
-        /*background-color: #08088A;*/
-        border-radius: 0px;
-    }
-
-    #no-more-tables tr
-    {
-        background-color: #E7E5F0;
-    }
+	#no-more-tables tr
+	{
+		background-color: #E7E5F0;
+	}
 }
 
 #no-more-tables .btn-lg
-{
-    width:75%;
-    border-radius: 0px;
-}
+	{
+		width:75%;
+		border-radius: 0px;
+	}
 
 #no-more-tables tr
-{
-    padding: 5px;
-}
+	{
+		padding: 5px;
+	}
 
 #no-more-tables thead
-{
-    padding: 5px;
-    color: rgba(1, 82, 255, 0.54);
-}
+	{
+		padding: 5px;
+		color: rgba(1, 82, 255, 0.54);
+	}
 
 .btns li
 {
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
 
 
 }
 .btns
 {
-    margin-bottom: 40px;
-    width:100%;
-
+	margin-bottom: 40px;
+	width:100%;
+	
 
 }	
 .btns .btn
 {
-    border-radius: 0px;
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 200px;
+	border-radius: 0px;
+	padding-left: 25px;
+	padding-right: 25px;
+	width: 200px;
+}
+.bgcolor-whitesmoke {
+    background-color: whitesmoke;
+}
+
+
+.avatar img {
+    position: relative;
+    width: 100%;
+    max-height:250px; 
+    -webkit-box-shadow: -1px 1px 12px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 12px -3px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 12px -3px rgba(0,0,0,0.75);
+    margin-bottom:20px;
+    padding:0;
+}
+
+.account
+{
+    padding: 10px;
+}
+.account h3
+{
+    margin:0px;
+    padding: 0px;
+}
+.account ul
+{
+    list-style: none;
+    padding: 10px;
+
+    margin:0px;
+}
+.fa-check,.fa-cog,.fa-credit-card
+{
+     color: #DBA901;
 }
