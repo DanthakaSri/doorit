@@ -129,7 +129,7 @@ Dashboard Styles
 
 
 /*=============================================================
-    Authour URI: www.binarytheme.com
+   
     Developed by Pasindu Danthaka Sri
    
     ========================================================  */
@@ -138,7 +138,7 @@ Dashboard Styles
 /* ==== Google font ==== */
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 /* === fontawesome === */
-@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url('../assets/plugins/font-awesome/font-awesome.css');
 /* ==== animate styles ==== */
 @import url('../plugins/animate/animate.css');
 /*==========================================================================

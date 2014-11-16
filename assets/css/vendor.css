@@ -2,7 +2,7 @@
 /* ==== Google font ==== */
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 /* === fontawesome === */
-@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url('../assets/plugins/font-awesome/font-awesome.css');
 /* ==== animate styles ==== */
 @import url('../plugins/animate/animate.css');
 /*==========================================================================
@@ -529,4 +529,40 @@ a.scrollup{
     padding-left: 25px;
     padding-right: 25px;
     width: 200px;
+}
+.bgcolor-whitesmoke {
+    background-color: whitesmoke;
+}
+
+
+.avatar img {
+    position: relative;
+    width: 100%;
+    max-height:250px; 
+    -webkit-box-shadow: -1px 1px 12px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 12px -3px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 12px -3px rgba(0,0,0,0.75);
+    margin-bottom:20px;
+    padding:0;
+}
+
+.account
+{
+    padding: 10px;
+}
+.account h3
+{
+    margin:0px;
+    padding: 0px;
+}
+.account ul
+{
+    list-style: none;
+    padding: 10px;
+
+    margin:0px;
+}
+.fa-check,.fa-cog,.fa-credit-card
+{
+    color: #DBA901;
 }
