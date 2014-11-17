@@ -20,24 +20,25 @@
         <link href="assets/css/about-achivements.css" rel="stylesheet" />
         <link id="mainStyle" href="assets/css/style.css" rel="stylesheet" />
         <link id="mainStyle" href="assets/css/index.css" rel="stylesheet" />
-        <link href="assets/plugins/font-awesome/font-awesome.css" rel="stylesheet"> 
-        <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+       <link href="assets/plugins/font-awesome/font-awesome.css" rel="stylesheet">
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <!-- END MAIN STYLE SECTION-->
         <!--  SLIDER STYLE SECTION -->
         <link href="assets/ProductSlider/css/main-style.css" rel="stylesheet" />
         <link href="assets/css/animate.css" rel="stylesheet" />
         <!-- END  SLIDER STYLE SECTION -->
 
+        
         <style type="text/css">
-            .news
-            {
-                padding:50px;
-                margin-bottom:40px;
-                margin-top:20px;
-                border-top:1px solid #f2f2f2;
-                border-bottom:1px solid #f2f2f2;
-                height:150px;
-            }
+        .news
+        {
+            padding:50px;
+            margin-bottom:40px;
+            margin-top:20px;
+            border-top:1px solid #f2f2f2;
+            border-bottom:1px solid #f2f2f2;
+            height:150px;
+        }
         </style>
     </head>
     <!-- END HEAD SECTION-->
@@ -47,29 +48,26 @@
 
         <!-- HEADER SECTION -->
         <section>
-            <div class="navbar navbar-static" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="fa fa-bars mobile-bars" style=""></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html" >
-                            <img src="assets/img/logo.png" alt="" /> <!-- logo here-->
-                        </a>
-                    </div>
-                    <div class="navbar-collapse collapse" data-scrollreveal="enter from the right 50px">
-                        <ul class="nav navbar-nav">
-
-                            <li><a href="#section-contact">List Your Business</a></li>
-
-                            <li><a href="login.html" class="btn btn-outlined btn-success">Login</a></li>
-
-
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
+            <header role="banner" class="navbar navbar-fixed-top navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Brand"></a>
+          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle">
+          Menu
+          </button>
+        </div>
+        <div class="navbar-default side-collapse in">
+          <nav role="navigation" class="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right t-uppercase text-center">
+              <li><a href="#">List your business</a></li>
+              <li><button type="button" class="btn btn-default navbar-btn">Login</button></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
         </section>
         <!-- END HEADER SECTION -->
         <!--PAGE CONTENT--> 
@@ -142,7 +140,7 @@
 
             <section class="section" id="largeform" >
 
-                <div class="visible-lg" data-scrollreveal="wait 0.10s">
+                <div class="visible-lg">
                     <form class="form-horizontal search ">
                         <fieldset>
 
@@ -232,7 +230,7 @@
         <!-- HOW IT"S WORK SECTION-->
 
         <section id="section-about" class="section">
-            <div class="container" data-scrollreveal="wait 0.10s">
+            <div class="container" >
                 <div class="row text-center">
                     <div class="col-md-offset-2 col-md-8">
                         <div>
@@ -254,10 +252,10 @@
                         <div class="row ">
 
 
-                            <div id="image-left" data-scrollreveal="enter right and move 40px over 0.8s" >
+                            <div id="image-left">
                                 <img src="assets/img/hw1.png" style="width:250px;height:250px;" class="img-circle img-responsive" alt="">
                             </div>
-                            <div class="hwork text-left" data-scrollreveal="enter right and move 40px over 0.8s">
+                            <div class="hwork text-left">
                                 <h3>Step 1</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -270,7 +268,7 @@
 
                         </div>
                         <div class="row ">
-                            <div id="image-right"  data-scrollreveal="enter left and move 40px over 0.8s">
+                            <div id="image-right">
                                 <img src="assets/img/hw2.png" style="width:250px;height:250px;" class="img-circle img-responsive" alt="">
                             </div>   
                             <div class="hwork text-right" data-scrollreveal="enter left and move 40px over 0.8s">
@@ -632,7 +630,7 @@
 
 
         </section>
-
+       
         <!--END PAGE CONTENT-->
 
         <section class="hidden-xs">
@@ -640,12 +638,12 @@
                 <div class="row text-center">
 
                     <div class="news">
-
+                    
                         <div class="col-sm-3"><img src="assets/img/news1.png" alt=""></div>
                         <div class="col-sm-3"><img src="assets/img/news2.png" alt=""></div>
                         <div class="col-sm-3"><img src="assets/img/news3.png" alt=""></div>
                         <div class="col-sm-3"><img src="assets/img/news4.png" alt=""></div>
-
+                       
                     </div>
                 </div>
             </div>  
